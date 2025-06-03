@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar datos</title>
+</head>
+<body>
+
+    <h2>Mostrar datos</h2>
+    
+    <p id="nombre"></p>
+    <p id="matricula"></p>
+
+    <script>
+
+        const params = new URLSearchParams(window.location.search);
+        const nombre = params.get("nombre");
+        const matricula = params.get("Matricula");
+
+        document.getElementById("nombre").textContent = "Nombre " + nombre;
+        document.getElementById("matricula").textContent = "Matricula " + matricula;
+        
+
+    </script>
+
 </body>
 </html>
