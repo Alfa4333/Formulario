@@ -11,16 +11,17 @@
     
     <p id="nombre"></p>
     <p id="matricula"></p>
-
+    <p id="dirrecion"></p>
     <script>
 
         const params = new URLSearchParams(window.location.search);
         const nombre = params.get("nombre");
         const matricula = params.get("Matricula");
+        const dirrecion = params.get("dirrecion");
 
         document.getElementById("nombre").textContent = "Nombre " + nombre;
         document.getElementById("matricula").textContent = "Matricula " + matricula;
-        
+        document.getElementById("dirrecion").textContent="dirrecion"+ dirrecion;
 
     </script>
 
