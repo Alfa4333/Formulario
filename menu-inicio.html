@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+     <title>Menu CSS3</title>
+
+     <style>
+          *{
+			margin: 0;
+               padding: 1px;
+               font-family: 'Varela Round', sans-serif;
+          }
+
+              header{
+               display: flex;
+               justify-content: space-around;
+               align-items: center;
+               padding: 10px 0px;
+               border-bottom:  1px solid blue;
+               bottom: 100px;
+
+          }
+
+          li{
+               display: inline-block;
+               padding:  0px 20px;
+               list-style: none;
+     
+          }
+
+
+          .logo{
+               width: 200px;
+               cursor: pointer;
+               
+
+          }
+          a{
+               font-size: 14px;
+               text-decoration: none;
+               text-transform: 700;
+               color: rgb(15, 14, 14);
+               
+          }
+          .btn{
+               padding: 10px 25px;
+               background-color: aqua;
+                background-color: #d84444;
+               color: white;
+               box-shadow: 0 4px 10px rgba(20, 19, 19, 0.1);
+              
+          }
+         .boton-personalizado:hover {
+               background-color: #df1530;
+                letter-spacing: 1px;
+                border-radius: 5px;
+               box-shadow: 0px 4px 8px 3px rgba(115, 114, 121, 0.5);
+                transition: background-color 2s;
+                 box-shadow: 0px 4px 10px;
+          }
+
+
+
+     </style> 
+<body>
+<header>
+          <img src="imagen 2/logo.png" alt="" class="logo">
+          <nav>
+               <ul>
+                    <li><a href="flexbox1-inicio.html" class="boton-personalizado">Flex</a></li>
+                    <li><a href="#" class="boton-personalizado">Sevicios</a></li>
+                    <li><a href="#" class="boton-personalizado">Portafolio</a></li>
+                    <li><a href="#" class="boton-personalizado">Multimedia</a></li>
+                    <li><a href="#" class="boton-personalizado">Contacto</a></li>
+               </ul>
+          </nav>
+          <a href="" class="btn">Login</a>
+
+     </header>
+
+</body>
+
+</html>
