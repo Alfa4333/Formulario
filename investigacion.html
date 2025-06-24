@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ejemplo con display: grid</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: 60px 1fr 50px;
+      gap: 10px;
+      height: 80vh;
+      margin-top: 20px;
+    }
+
+    .item {
+      padding: 20px;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+    }
+
+    .header  { background-color: #4CAF50; grid-area: header; }
+    .sidebar { background-color: #2196F3; grid-area: sidebar; }
+    .main    { background-color: #f44336; grid-area: main; }
+    .footer  { background-color: #555; grid-area: footer; }
+
+    .codigo {
+      background: #222;
+      color: #0f0;
+      padding: 10px;
+      font-family: monospace;
+      border-radius: 6px;
+      overflow-x: auto;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ejemplo de Grid con Posicionamiento</h1>
+  <h2>Usando grid-area y grid-template-areas</h2>
+
+  <div class="container">
+    <div class="item header">Header</div>
+    <div class="item sidebar">Sidebar</div>
+    <div class="item main">Main</div>
+    <div class="item footer">Footer</div>
+  </div>
+
+  <h2>Código CSS utilizado:</h2>
+  <div class="codigo">
+    .container {<br>
+    &nbsp;&nbsp;display: grid;<br>
+    &nbsp;&nbsp;grid-template-areas:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"header header"<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"sidebar main"<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"footer footer";<br>
+    &nbsp;&nbsp;grid-template-columns: 1fr 2fr;<br>
+    &nbsp;&nbsp;grid-template-rows: 60px 1fr 50px;<br>
+    &nbsp;&nbsp;gap: 10px;<br>
+    }<br><br>
+
+    .header { grid-area: header; }<br>
+    .sidebar { grid-area: sidebar; }<br>
+    .main { grid-area: main; }<br>
+    .footer { grid-area: footer; }
+  </div>
+</body>
+</html>

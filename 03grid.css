@@ -1,44 +1,46 @@
 .grid{
     display: grid;
     grid-gap: 20px;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows:repeat(4.auto);      
 
-    grid-template-columns:repeat(3,1fr);
-    grid-template-rows: repeat(4,auto);
-
-    grid-template-areas:  
-    "hader          header      header"  
-    "sidebar1       contenido   sidebar 2"
-    "sidebar1       widget      sidebar 2"
-    "footer         footer      footer";
+    grid-template-areas:
+    "header        header       hearder"
+    "sidebar1      contenido    sidebar2"
+    "sidedar1      widget       sidebar2"
+    "footer        footer       foote";
+   
+}
+.grid .header{
+    background: orange;
+    grid-column-start: header ;
+    grid-column-end: header ;
 } 
 
-.grid .header{
-    background: #ff8000;
-    grid-area: header;
-}
-
 .grid .sidebar1{
-    background: #00db54;
-    grid-area: sidebar1;
+    background: lightgreen;
+    grid-column: sidedar1;
+    grid-row: sidedar1;
+
 }
 
 .grid .contenido{
-    background: #dedede;
+    background:#dedede ;
     color: #000;
-    grid-area: contenido;
+    grid-area:contenido ;
 }
 
 .grid .sidebar2{
-    background: #00db54;
-    grid-area: sidebar2;
+    background: goldenrod;
+    grid-area:sidebar2 ;
 }
 
 .grid .widget{
-    background: #ff8000;
+    background: yellowgreen;
     grid-area: widget;
 }
 
 .grid .footer{
-    background: #222831;
+    background:lightslategray;
     grid-area: footer;
 }
