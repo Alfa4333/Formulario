@@ -5,10 +5,10 @@
     grid-template-rows:repeat(4.auto);      
 
     grid-template-areas:
-    "header        header       hearder"
-    "sidebar1      contenido    sidebar2"
-    "sidedar1      widget       sidebar2"
-    "footer        footer       foote";
+    "header         header      header"
+    "sidebar1       contenido   sidebar2"
+    "sidebar1       widget      sidebar2"
+    "footer         footer      footer";
    
 }
 .grid .header{
@@ -19,8 +19,7 @@
 
 .grid .sidebar1{
     background: lightgreen;
-    grid-column: sidedar1;
-    grid-row: sidedar1;
+    grid-area:sidebar1 ;
 
 }
 
